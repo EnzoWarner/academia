@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text, Picker } from 'react-native';
 import TextInputBox from '../../components/TextInput/TextInput'; // Componente de input
 import CustomButton from '../../components/CustomButton/CustomButton'; // Componente de botão
-import { adicionarExercicio } from '../db'; // Importa a função para adicionar no banco
+import { adicionarExercicio } from '../../repository/ExercicioRepository';
 
 function ExercicioScreen() {
   const [nome, setNome] = useState('');

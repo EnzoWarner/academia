@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text, ScrollView } from 'react-native';
-import { getAgenda } from '../db'; // Importa a função que recupera dados do banco
+import { getAgenda } from '../../repository/ExercicioRepository';
 
 function ConsultaExerciciosScreen() {
   const [agenda, setAgenda] = useState([]);
